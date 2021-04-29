@@ -19,6 +19,7 @@ class Game {
         document.body.appendChild(this.canvas);
 
 
+
     }
 
     loop() {
@@ -26,7 +27,7 @@ class Game {
         this.draw();
 
         document.getElementById('diem').innerHTML = 'Score:' + this.Consau.score;
-        setTimeout(() => this.loop(), 100);
+        setTimeout(() => this.loop(), 150);
 
     }
 

@@ -5,7 +5,8 @@ class Qua{
         this.y = 0;
         this.grid = 20;
         this.update();
-
+        this.image = new Image();
+        this.image.src = "taotau" + ".png";
     }
     update(){
         this.x = (Math.floor(Math.random()*(19 - 0)) + 0)*this.grid;
@@ -14,6 +15,6 @@ class Qua{
     }
     draw(){
         this.Game.context.fillStyle = 'red';
-        this.Game.context.fillRect(this.x, this.y, this.grid, this.grid);
+        this.Game.context.drawImage(this.image,this.x, this.y, this.grid, this.grid);
     }
 }

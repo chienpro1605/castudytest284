@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title>sâu ăn quả</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body onloadstart="audio.play()">
+<audio src="nhac.mp3" autoplay loop id="audio"></audio>
+
 <center style="margin-left: auto">
     <input type="reset" onclick="location.reload()" style="background-color: red" value="reset">
     <span id="diem"></span>
     <canvas id="canvas"></canvas>
 </center>
+<script>
+    let audio = document.getElementById('audio')
+    audio.play();
+
+</script>
 <script src="vatcan.js"></script>
 <script src="Qua.js"></script>
 <script src="Consau.js"></script>

@@ -9,6 +9,8 @@ class Consau{
         this.cell = [];
         this.maxcell = 2;
         this.score = 0;
+        this.image = new Image();
+        this.image.src = "dausau" + ".png";
     }
     update(){
         if (this.endGame() == true){
@@ -24,8 +26,8 @@ class Consau{
     }
     draw(){
         for (let i = 0; i< this.cell.length; i++){
-            this.Game.context.fillStyle = 'blue';
-            this.Game.context.fillRect(this.cell[i].x, this.cell[i].y,this.grid,this.grid);
+            // this.Game.context.fillStyle = 'blue';
+            this.Game.context.drawImage(this.image, this.cell[i].x, this.cell[i].y, this.grid,this.grid);
         }
         if (this.endGame() == false){
             this.Game.context.font = '40px Calibri';

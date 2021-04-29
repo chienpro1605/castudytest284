@@ -4,7 +4,8 @@ class Vatcan {
         this.x = 0;
         this.y = 0;
         this.grid = 20;
-        // this.list=[];
+        this.image = new Image();
+        this.image.src = "phan" + ".png";
 
     }
 
@@ -16,7 +17,7 @@ class Vatcan {
 
     draw() {
         this.Game.context.fillStyle = 'black';
-        this.Game.context.fillRect(this.x, this.y, this.grid, this.grid);
+        this.Game.context.drawImage(this.image,this.x, this.y, this.grid, this.grid);
 
     }
 }
