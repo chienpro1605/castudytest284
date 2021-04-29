@@ -1,7 +1,8 @@
 body{
-    background-color: aqua;
+    background-size: 100%;
+    background-image: url("507079.jpg");
 }
 canvas{
-    border: 2px solid white;
-    margin-left: 450px;
+    border: 2px solid black;
+    margin-left: 550px;
 }

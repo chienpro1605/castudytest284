@@ -15,7 +15,7 @@ class Vatcan {
     }
 
     draw() {
-        this.Game.context.fillStyle = 'pink';
+        this.Game.context.fillStyle = 'black';
         this.Game.context.fillRect(this.x, this.y, this.grid, this.grid);
 
     }

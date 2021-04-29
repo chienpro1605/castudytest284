@@ -6,7 +6,7 @@ class Game {
         this.Consau = new Consau(this);
         this.Qua = new Qua(this);
         this.Vatcan = new Vatcan(this);
-        this.list = [];
+        this.block = [];
         this.loop();
 
     }
@@ -37,7 +37,7 @@ class Game {
             this.Vatcan.update();
             let a = new Vatcan(this);
             a.update();
-            this.list.push(a);
+            this.block.push(a);
         }
     }
 
@@ -46,12 +46,10 @@ class Game {
         this.Consau.draw();
         this.Qua.draw();
         //this.Vatcan.draw()
-        for (let i = 0; i < this.list.length; i++) {
-           this.list[i].draw();
+        for (let i = 0; i < this.block.length; i++) {
+            this.block[i].draw();
         }
     }
 }
 
 let g = new Game();
-// setInterval(main,100)
-// console.log(g.list.length);

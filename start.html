@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Game</title>
+
+    <style>
+        body{
+            background-size: 100%;
+            background-image: url("game-giun-dat-khong-lo.jpg");
+        }
+        div{
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1 style="color: chartreuse">Game Sâu ăn Quả</h1>
+<button style="background-color: gold" onclick = 'huongdan()'>Hướng Dẫn chơi</button>
+<button style="background-color: red" onclick="start()">start game</button><br>
+<span id="direction"></span>
+</div>
+<script>
+    function start(){
+        window.location.href = 'index.html';
+    }
+    function huongdan(){
+        document.getElementById('direction').innerText = "- Dùng phím lên xuống phải trái trên bàn phím để đi chuyển con sâu ăn quả";
+
+    }
+</script>
+</body>
+</html>
